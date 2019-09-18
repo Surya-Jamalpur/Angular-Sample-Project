@@ -1,0 +1,9 @@
+<div class="mainNav">
+    <ul>
+        <li *ngFor="let nav of mainNavItems; let i=index">
+            <a [routerLink]='[nav.path]' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{nav.name}}</a>
+        </li>
+        <li><a [routerLink]="['/cart']">Cart <span class="itemCount"> {{itemsLength}} </span></a>
+        </li>
+    </ul>
+</div>

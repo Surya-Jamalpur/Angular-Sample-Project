@@ -1,0 +1,11 @@
+<h1>Products</h1>
+
+<div class="product" *ngFor="let product of products; index as productID" [routerLink]="['/products', productID]">
+    <h3> {{product.name}} </h3>
+    <span class="price">{{product.price | currency}}</span>
+    <div class="colorsBlock">
+       <div>Colors Available</div>
+        <div class="color" *ngFor="let x of product.colors" [ngStyle]="{'background':''+ x +''}">
+        </div>
+    </div>
+</div>

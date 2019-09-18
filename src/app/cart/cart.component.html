@@ -1,0 +1,12 @@
+<h3>Cart</h3>
+<div class="cart">
+        <div class="cart-item" *ngFor="let item of items">
+                <h3> {{ item.name }} </h3>
+                <span class="price">{{ item.price | currency }}</span>
+                <div class="colorsBlock">
+                   <div>Colors Available</div>
+                    <div class="color" *ngFor="let x of item.colors" [ngStyle]="{'background':''+ x +''}">
+                    </div>
+                </div>
+              </div>
+</div>

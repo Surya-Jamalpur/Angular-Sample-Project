@@ -1,0 +1,44 @@
+.product {
+    width: 500px;
+    text-align: left;
+
+    h3 {
+        font-size: 34px;
+        font-weight: 600;
+        color: skyblue;
+    }
+    .price {
+        font-size: 14px;
+        font-weight: 600;
+        color: darkblue;
+    }
+    .color{
+        border: solid 1px lightgray;
+        margin: 5px;
+        float: left;
+        width: 20px;
+        height: 20px;
+    }
+}
+.nextpriv {
+    a {
+        background: purple;
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        float: left;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}
+
+.disable {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    background-color: lightgrey !important;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+}

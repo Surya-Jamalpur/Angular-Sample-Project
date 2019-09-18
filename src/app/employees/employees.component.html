@@ -1,0 +1,7 @@
+<h1>Employees</h1>
+
+<div *ngFor="let emp of employees; index as empId">
+
+    <a [routerLink]="['/employees', empId]">{{empId}}.  {{ emp.name }}</a>
+  
+</div>

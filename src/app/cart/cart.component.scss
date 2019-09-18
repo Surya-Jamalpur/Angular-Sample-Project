@@ -1,0 +1,35 @@
+.cart {
+    width: calc(100% - 100px);
+    height: auto;
+    padding: 20px;
+    border: solid 1px lightgray;
+    margin: 0px 25px;
+    float: left;
+
+    .cart-item {
+        width:150px;
+        margin: 0 10px 10px 10px;
+        border: solid 1px lightgray;
+        float: left;
+        padding: 0px 20px 20px 20px;
+
+    }
+
+    h3 {
+        font-size: 34px;
+        font-weight: 600;
+        color: skyblue;
+    }
+    .price {
+        font-size: 14px;
+        font-weight: 600;
+        color: darkblue;
+    }
+    .color{
+        border: solid 1px lightgray;
+        margin: 5px;
+        float: left;
+        width: 20px;
+        height: 20px;
+    }
+}
