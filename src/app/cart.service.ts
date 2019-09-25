@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
-
+import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
 items = [];
 public subject = new Subject<any>();
-  constructor() { }
+
+  constructor(private http: HttpClient) { }
 
 addToCart(product){
     this.items.push(product);
@@ -24,5 +25,8 @@ addToCart(product){
 
   getMessage(): Observable<any> {
     return this.subject.asObservable();
+  }
+  getShippingPrices() {
+    return this.http.get('assets/shipping.json');
   }
 }
